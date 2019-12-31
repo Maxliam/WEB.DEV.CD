@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <link href="images/orange.png" type="image/jpg" rel="shortcut icon" />
+    <script src="slideshow.js"></script>
+</head>
+<body>
+
+    <!-- Navbar classes // Adust links or logo here -->
+
+    <navbar>
+        <img class="logo" src="images/logo.jpg" alt="logo">
+
+        <nav>
+            <ul class="nav_links">
+                <li><a href="Homepage.html"><button class="button_nav">Home</button></a></li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <button class="dropbtn">Categories </button>
+            <div class="dropdown-content">
+                <a href="Electronics.html">Electronics</a>
+                <a href="Clothing.html">Clothing</a>
+                <a href="Furniture.html">Furniture</a>
+            </div>
+        </div>
+        <a class="cta" href="Contact Us.html"><button class="button_nav">Contact Us</button></a>
+    </navbar>
+
+    <!-- Slideshow classes // Adjust homepage advertising here :) -->
+
+    <div class="container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/deal2.jpg" style="width:100%"> <!-- clothing deal-->
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/deal1.jpg" style="width:100%"> <!-- notebooks deal-->
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/deal2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="images/deal1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="images/deal2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/deal1.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&lt;</a> <!-- &lt and &gt for left/right arrows, cause we cant use keyboard shortcut arrows -->
+        <a class="next" onclick="plusSlides(1)">&gt;</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumb nail for advertising (The pictures placed below the ads ^_^) -->
+
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="images/deal2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Clothing & Fashion">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/deal1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Notebooks & Computer Hardware">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/deal2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Empty/copied">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/deal2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Empty/copied">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/deal2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Empty/copied">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/deal2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Empty/copied">
+            </div>
+        </div>
+    </div>
+
+    <!-- Homepage Content -->
+
+    <div id="middle-section">
+        <div id="content">
+            <div id="right-section"><img src="images/shop-by-cat.jpg" style="width:100%;" /></div>
+            <div id="left-section"><img src="images/holiday-offers.jpg" style="width:100%;" /></div>
+        </div>
+
+        <!-- Footer -->
+        <h2 id="footer">
+            <p style="position:absolute;color:white;font-size:70%;left:100px;padding-bottom:10px;border-bottom:1px solid grey">Contact us</p>
+            <p style="position:absolute;color:white;font-size:70%;left:300px;padding-bottom:10px;border-bottom:1px solid grey">Need help?</p>
+            <br /><br />
+            <p style="position:absolute;color:ghostwhite;font-size:50%;left:100px;">Email</p>
+            <p style="position:absolute;color:ghostwhite;font-size:50%;left:300px;">FAQ</p>
+            <br />
+            <p style="position:absolute;color:ghostwhite;font-size:50%;left:100px;">Hotline</p>
+            <p style="position:absolute;color:ghostwhite;font-size:50%;left:300px;">Shipping Policy</p>
+            <br />
+            <p style="position:absolute;color:ghostwhite;font-size:50%;left:300px;">Return Policy</p>
+        </h2>
+        <h2 id="copyright">
+            <p style="position:absolute;color:ghostwhite;font-size:50%;left:82%;">&copy;2020 MSA UNIVERSITY FACULTY OF CS</p>
+        </h2>
+    </div>
+
+</body>
+</html>
